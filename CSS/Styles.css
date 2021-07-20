@@ -426,6 +426,8 @@ a {
   }
 }
 
+/* Media */
+
 .media {
   display: flex;
 }
@@ -809,4 +811,48 @@ a {
 .block--plans .card {
   max-width: 500px;
   margin: 0 auto;
+}
+
+.block--features .grid {
+  row-gap: 6rem;
+}
+
+.block--features .block__header {
+  margin-bottom: 10rem;
+}
+
+.block--features .media {
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.block--features .media__image {
+  margin: 0.5rem 2rem;
+}
+
+.block--features .grid {
+  margin: 6rem auto;
+}
+
+.block--features p {
+  margin-bottom: 1.5rem;
+}
+
+.block--features img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 1024px) {
+  .block--features .block__header {
+    margin-bottom: 3rem;
+  }
+
+  .block--features .grid {
+    margin: 10rem auto;
+  }
+
+  .feature:nth-of-type(even) .media {
+    order: 2;
+  }
 }
