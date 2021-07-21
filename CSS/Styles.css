@@ -488,10 +488,10 @@ a {
 
 @media screen and (min-width: 1024px) {
   .quote {
-    font-size: 2rem;
-  }
-  .quote__author {
     font-size: 2.4rem;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    align-self: center;
   }
   .quote__copmany {
     font-size: 1.6rem;
@@ -520,6 +520,7 @@ a {
 
 .testimonial {
   padding: 3rem;
+  margin-top: 4rem;
 }
 
 .testimonial__image {
@@ -541,6 +542,9 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .testimonial {
+    margin-top: 5rem;
+  }
   .testimonial .quote,
   .testimonial .quote__author {
     font-size: 1.8rem;
@@ -548,6 +552,10 @@ a {
 
   .testimonial .quote__company {
     font-size: 1.2rem;
+  }
+
+  .testimonial__image > img {
+    padding-left: 0;
   }
 
   .testimonial__image > .icon-container {
@@ -664,6 +672,7 @@ a {
 
 .block__heading {
   margin-top: 0;
+  margin-bottom: 4rem;
 }
 
 .block--dark {
@@ -905,7 +914,6 @@ a {
   }
 
   .showcase__image {
-    width: auto;
     max-width: 700px;
     justify-self: end;
   }
