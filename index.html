@@ -50,18 +50,28 @@
     <section class="block block--dark block--skewed-left hero">
       <div class="container grid grid--1x2">
         <header class="block__header hero__content" data-aos="fade-right">
-          <h1 class="block__heading">Chloe is a hoe</h1>
+          <h1 class="block__heading">Cloud Hosting for Pros</h1>
           <p class="hero__tagline">
             Deploy your websites in less than 60 seconds
           </p>
           <a href="#" class="btn btn--accent btn--stretched">Get Started</a>
         </header>
-        <img
-          data-aos="zoom-in-left"
-          class="hero__image"
-          src="images/WhatsApp Image 2021-07-13 at 22.47.41.jpeg"
-          alt=""
-        />
+        <picture>
+          <source
+            type="image/webp"
+            srcset="images/banner.webp 1x, images/banner@2x.webp 2x"
+          />
+          <source
+            type="image/png"
+            srcset="images/banner.png 1x, images/banner@2x.png 2x"
+          />
+          <img
+            data-aos="zoom-in-left"
+            class="hero__image"
+            src="images/banner@2x.png"
+            alt=""
+          />
+        </picture>
       </div>
     </section>
     <section class="block container block-domain">
